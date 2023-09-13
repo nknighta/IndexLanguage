@@ -3,7 +3,7 @@
 int main (void) {
 	char ch;
 	FILE *fp;
-	fp = fopen("memo.txt","r");
+	fp = fopen("memo.il","r");
 	if ( fp == NULL ) {
 		perror("file not found");
 		return 1;
