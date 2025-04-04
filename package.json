@@ -1,0 +1,11 @@
+{
+  "name": "indexlang",
+  "version": "0.1.0",
+  "description": "faster web language with rust",
+  "main": "index.js",
+  "author": "Nknight AMAMIYA<n.knight.pc0627@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cargo run"
+  }
+}
