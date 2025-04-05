@@ -1,11 +1,18 @@
 {
-  "name": "indexlang",
-  "version": "0.1.0",
-  "description": "faster web language with rust",
+  "name": "wasmtest",
+  "version": "0.0.12",
   "main": "index.js",
-  "author": "Nknight AMAMIYA<n.knight.pc0627@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "cargo run"
+    "build": "wasm-pack build --target nodejs",
+    "start": "node examples/index.js",
+    "swc": "npx swc ./pkg/il_compiler.js -o examples/com.js",
+    "all": "yarn build && yarn swc && yarn start"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.11.16",
+    "webpack": "^5.98.0"
   }
 }
