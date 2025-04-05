@@ -67,9 +67,6 @@ function passStringToWasm0(arg, malloc, realloc) {
     const len0 = WASM_VECTOR_LEN;
     wasm.greet(ptr0, len0);
 };
-module.exports.__wbg_log_c222819a41e063d3 = function(arg0) {
-    console.log(arg0);
-};
 module.exports.__wbindgen_init_externref_table = function() {
     const table = wasm.__wbindgen_export_0;
     const offset = table.grow(4);
@@ -79,10 +76,6 @@ module.exports.__wbindgen_init_externref_table = function() {
     table.set(offset + 2, true);
     table.set(offset + 3, false);
     ;
-};
-module.exports.__wbindgen_string_new = function(arg0, arg1) {
-    const ret = getStringFromWasm0(arg0, arg1);
-    return ret;
 };
 module.exports.__wbindgen_throw = function(arg0, arg1) {
     throw new Error(getStringFromWasm0(arg0, arg1));

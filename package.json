@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "wasm-pack build --target nodejs",
-    "start": "node examples/index.js",
+    "start": "node ./examples/index.js",
     "swc": "npx swc ./pkg/il_compiler.js -o examples/com.js",
-    "all": "yarn build && yarn swc && yarn start"
+    "all": "yarn build && yarn start"
   },
   "devDependencies": {
     "@swc/cli": "^0.6.0",
